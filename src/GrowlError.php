@@ -64,6 +64,10 @@ class GrowlError
 
 	public function handleError($errno, $errstr, $errfile, $errline)
 	{
+		if (!(error_reporting() & $errno)) {
+	        // This error code is not included in error_reporting
+	        return;
+	    }
 
 	    switch ($errno) {
 	    case E_USER_ERROR:

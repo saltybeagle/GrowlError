@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.1" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.1     http://pear.php.net/dtd/package-2.1.xsd">
+ <name>Net_Growl</name>
+ <channel>pear.php.net</channel>
+ <summary>Net Growl is an application which sends growl notifications
+</summary>
+ <description/>
+ <lead>
+  <name>Laurent Laville</name>
+  <user>laurent</user>
+  <email>pear@laurent-laville.org</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-04-29</date>
+ <time>11:40:37</time>
+ <version>
+  <release>1.2.2</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>1.2.2 release
+</notes>
+ <contents>
+  <dir name="/">
+   <file role="test" name="tests/_files/response_gntp_register_ok" md5sum="d0ffaee71601a74ebfe6fd3321c3bc42"/>
+   <file role="test" name="tests/_files/response_gntp_no_notifications_registered" md5sum="e35ffb973f72e9f06ebf3da0ff496005"/>
+   <file role="test" name="tests/_files/Net/Growl/foo.php" md5sum="18acbaadd165772deeddac342b380922"/>
+   <file role="test" name="tests/_files/korganizer-128x128.png" md5sum="ca4f824076ac2fbc24285503d1588ddb"/>
+   <file role="test" name="tests/_files/growl_icon_48x48.png" md5sum="fa554b2ffc9c8f2373e73bfcf9690a40"/>
+   <file role="test" name="tests/Growl/GntpTest.php" md5sum="f0812d7d7a18db5cbe33e11a94adc393"/>
+   <file role="test" name="tests/Growl/GntpMockTest.php" md5sum="9c84aefd925797961f12e032a6d3d609"/>
+   <file role="test" name="tests/AllTests.php" md5sum="9d89b5df80154ebcd8d1484749821b5d"/>
+   <file role="php" name="src/Net/Growl/Udp.php" md5sum="30b4e535bf03eaef1302830a56ffbead"/>
+   <file role="php" name="src/Net/Growl/Response.php" md5sum="0009df53fd208f5b41d477ee1f27e889"/>
+   <file role="php" name="src/Net/Growl/GntpMock.php" md5sum="4ab6ee7497d2bcd2100cb3c677e73011"/>
+   <file role="php" name="src/Net/Growl/Gntp.php" md5sum="1117d044c10116968c1b2009ea078210"/>
+   <file role="php" name="src/Net/Growl/Exception.php" md5sum="be6b5f9e590697d1d590542d9d2cca14"/>
+   <file role="php" name="src/Net/Growl/Application.php" md5sum="e432554f5710113a6708bb2ce3a50113"/>
+   <file role="php" name="src/Net/Growl.php" md5sum="82f9e75f3db734d2073b9c640d431488"/>
+   <file role="doc" name="examples/udpAdapterNotifyPEARerrors.php" md5sum="eed43f726752513c91383ba8a3636299"/>
+   <file role="doc" name="examples/udpAdapter.php" md5sum="4bbffe761138e837ca2c642f898b3e65"/>
+   <file role="doc" name="examples/simple.php" md5sum="ce3d2ee0022d8701cc795faad9f40130"/>
+   <file role="doc" name="examples/netgrowl.log" md5sum="4b5ea4cdb415cf54b993b7dc9d0a840a"/>
+   <file role="doc" name="examples/Help.ico" md5sum="c21ad6871acd5a835ef0497f19995f5a"/>
+   <file role="doc" name="examples/gntpAdapterUrlCallbacks.php" md5sum="1d188176df170d27c2d923962ecd524f"/>
+   <file role="doc" name="examples/gntpAdapterSocketCallbacks.php" md5sum="8af03c5f436a65995ee95a7bbcd773c1"/>
+   <file role="doc" name="examples/gntpAdapterSecurity.php" md5sum="fe26525cb5ff529b14d5aaa7c38db243"/>
+   <file role="doc" name="examples/gntpAdapter.php" md5sum="f126fc83cd0c548a0d2b0d09b93395c8"/>
+   <file role="doc" name="docs/userguide.txt" md5sum="27c06ca681324012261f33e8b14e5c0b"/>
+   <file role="doc" name="docs/userguide-docinfo.xml" md5sum="b316a1c27bb8f98b6999bd0d2ae81e0b"/>
+   <file role="doc" name="docs/styles/xhtml11.css" md5sum="39d2163ef9f32cb309b78c9da329bd66"/>
+   <file role="doc" name="docs/styles/xhtml11-quirks.css" md5sum="44759966d187a8640531c65556e5331c"/>
+   <file role="doc" name="docs/styles/pygments.css" md5sum="036047b9bdcb2f0e3da205402dacc702"/>
+   <file role="doc" name="docs/styles/growl.css" md5sum="b7b94767582ab0b228ce5c9d915c5160"/>
+   <file role="doc" name="docs/styles/growl-quirks.css" md5sum="2c5909a577d3b1cb383c2fed83974d96"/>
+   <file role="doc" name="docs/sources/udpAdapterNotifyPEARerrors.txt" md5sum="e1c68fb2f934cc2efe8d2ea8c4d214f7"/>
+   <file role="doc" name="docs/sources/udpAdapter.txt" md5sum="160b01a3fdc97f8da6deb4594e79e610"/>
+   <file role="doc" name="docs/sources/Udp.txt" md5sum="7f2cf5bb635f424f065c27ac46056ce6"/>
+   <file role="doc" name="docs/sources/Response.txt" md5sum="4767090358344b474405f6291d03764d"/>
+   <file role="doc" name="docs/sources/Growl.txt" md5sum="30eba5c04ef84701d4cfaef02ae4222b"/>
+   <file role="doc" name="docs/sources/GntpMock.txt" md5sum="2733d2a2fcb30424d4f6755812720b61"/>
+   <file role="doc" name="docs/sources/gntpAdapterUrlCallbacks.txt" md5sum="a06b6805e38f5d80c930237aec47679d"/>
+   <file role="doc" name="docs/sources/gntpAdapterSocketCallbacks.txt" md5sum="6cbae0ae050273e517d12c315190e44a"/>
+   <file role="doc" name="docs/sources/gntpAdapterSecurity.txt" md5sum="fa02d6f1cf04f8a5f09a69d87102a0f2"/>
+   <file role="doc" name="docs/sources/gntpAdapter.txt" md5sum="fbc3d4dba7a1321f66fb4b8fe0f04d0d"/>
+   <file role="doc" name="docs/sources/Gntp.txt" md5sum="82cae086223b552520cc77749b0b280d"/>
+   <file role="doc" name="docs/sources/Exception.txt" md5sum="44c88ca0eb6e6801ac146eadf231fb2c"/>
+   <file role="doc" name="docs/sources/Application.txt" md5sum="6cdd6c614d1a3930fd89dff6557e30e5"/>
+   <file role="doc" name="docs/revision.txt" md5sum="e6ec1f5de98b6efe5dcfcb9fa39d76a3"/>
+   <file role="doc" name="docs/README.txt" md5sum="d07b62547a3d923b1cecaed0a3075d2d"/>
+   <file role="doc" name="docs/LICENSE.txt" md5sum="6de72c4489d35d86fc268dbf1b35cfdf"/>
+   <file role="doc" name="docs/js/asciidoc-xhtml11.js" md5sum="a3e60e26c6b1b9271c48e16dda9b6e03"/>
+   <file role="doc" name="docs/INSTALL.txt" md5sum="02a11a00c2d57894c16a0b5880619fbe"/>
+   <file role="doc" name="docs/index.txt" md5sum="32968afbddb782d8337610301cf1a4a9"/>
+   <file role="doc" name="docs/images/net_growl_register.png" md5sum="571d3b66932466cea7685a38ab544634"/>
+   <file role="doc" name="docs/images/net_growl_256.png" md5sum="973d232bd3df0df4774462b3d925dd54"/>
+   <file role="doc" name="docs/images/icons/warning.png" md5sum="2e61325f811e5bfec08786b9b0751d09"/>
+   <file role="doc" name="docs/images/icons/up.png" md5sum="a56ca5ed6852297c4fb40b38e28ee087"/>
+   <file role="doc" name="docs/images/icons/tip.png" md5sum="74d8c9f1e3abf89003c4d68db9a5eba5"/>
+   <file role="doc" name="docs/images/icons/README" md5sum="cc2da9a46253cf21d608a1a6f2901cb8"/>
+   <file role="doc" name="docs/images/icons/prev.png" md5sum="63bc36e300f3f29a1d4dd66779405713"/>
+   <file role="doc" name="docs/images/icons/note.png" md5sum="25bf06d6517e45872dc9c8590e885c14"/>
+   <file role="doc" name="docs/images/icons/next.png" md5sum="ba02402f79193ee2caed63be315cae2d"/>
+   <file role="doc" name="docs/images/icons/important.png" md5sum="5287a2a7f4f0bd77f37fdc4cd3be9fac"/>
+   <file role="doc" name="docs/images/icons/home.png" md5sum="c1419eddcf4fe625bade5b99cdcb38c9"/>
+   <file role="doc" name="docs/images/icons/example.png" md5sum="047c21092de17250c8fc0eb085cb1e96"/>
+   <file role="doc" name="docs/images/icons/caution.png" md5sum="abb064ef2ca142facd503271b07ec480"/>
+   <file role="doc" name="docs/images/icons/callouts/15.png" md5sum="c98123e95a83670c84ba0e3975ea7adf"/>
+   <file role="doc" name="docs/images/icons/callouts/14.png" md5sum="c4ca7e994f2842b88c914f85b9544d56"/>
+   <file role="doc" name="docs/images/icons/callouts/13.png" md5sum="dc7a4be9918b62932980292cf4a7c40a"/>
+   <file role="doc" name="docs/images/icons/callouts/12.png" md5sum="100767337f65f71951dc2f04091838ff"/>
+   <file role="doc" name="docs/images/icons/callouts/11.png" md5sum="253393cb367ad6078c80c3ee1ced0b10"/>
+   <file role="doc" name="docs/images/icons/callouts/10.png" md5sum="29fd9e419eee2efa4ef6ce493ca51a9c"/>
+   <file role="doc" name="docs/images/icons/callouts/9.png" md5sum="5ba16a0731d050493bd7e0b95244aafc"/>
+   <file role="doc" name="docs/images/icons/callouts/8.png" md5sum="2f899cf0909049b0472654d7357eaeb3"/>
+   <file role="doc" name="docs/images/icons/callouts/7.png" md5sum="0def94f52c5e45256232320aaffeb1ce"/>
+   <file role="doc" name="docs/images/icons/callouts/6.png" md5sum="f64cfcfac0c4219edebc96d6d043c84c"/>
+   <file role="doc" name="docs/images/icons/callouts/5.png" md5sum="489005941fbb522369466ca850189c59"/>
+   <file role="doc" name="docs/images/icons/callouts/4.png" md5sum="3d412b47729eb73afc7aa430feeb7da0"/>
+   <file role="doc" name="docs/images/icons/callouts/3.png" md5sum="35dcf1dd29a802080c984e52d76e5b1f"/>
+   <file role="doc" name="docs/images/icons/callouts/2.png" md5sum="782f998bab59d0221977c1c0eaa676c8"/>
+   <file role="doc" name="docs/images/icons/callouts/1.png" md5sum="0f67842b8cc059137a88288e95115a18"/>
+   <file role="doc" name="docs/images/growl_notify_status_2.png" md5sum="24fd2ca1465dcee5ddf2fe650ddbaf5e"/>
+   <file role="doc" name="docs/images/growl_notify_status_1.png" md5sum="ae31051265fa600800387da7243a32ae"/>
+   <file role="doc" name="docs/images/growl_notify_phperror.png" md5sum="b9d1b7a658adf9d63b88c3bc6ee9d7b1"/>
+   <file role="doc" name="docs/images/growl.ico" md5sum="0f9413cc6e8ee5992f631a4b2952fa3a"/>
+   <file role="doc" name="docs/gntp_encryptdata.txt" md5sum="d8b585eb3ded0a756e277208b1650d65"/>
+   <file role="doc" name="docs/glossary.txt" md5sum="dcda9215c2420cde79d9c353012daa4f"/>
+   <file role="doc" name="docs/getting_started.txt" md5sum="d4947fa75413c61967200d057953666e"/>
+   <file role="doc" name="docs/FAQ.txt" md5sum="13d69720b39e4826318d731afc642b5f"/>
+   <file role="doc" name="docs/CHANGELOG.txt" md5sum="ed9d081469856de7b639d11679a2cf72"/>
+   <file role="doc" name="docs/bin/index.txt" md5sum="98976d0c55d20e2c00d1ce28a4d65529"/>
+   <file role="doc" name="docs/api/net_growl_udp.txt" md5sum="95eb93b007528457785b0e62ee6d1887"/>
+   <file role="doc" name="docs/api/net_growl_response.txt" md5sum="75ae3cd408ee50f1cf10d8d991e63dd4"/>
+   <file role="doc" name="docs/api/net_growl_gntpmock.txt" md5sum="a6d1d95d23320acf9719a663aa870e7a"/>
+   <file role="doc" name="docs/api/net_growl_gntp.txt" md5sum="901cbc1de05072a752e83856fd252085"/>
+   <file role="doc" name="docs/api/net_growl_exception.txt" md5sum="58109bfb09fdabd01333ac609b370b0e"/>
+   <file role="doc" name="docs/api/net_growl_application.txt" md5sum="e90dfb4655076a52c36ba8dd324c2fdd"/>
+   <file role="doc" name="docs/api/net_growl.txt" md5sum="1d6f0dba41010401c3a8785bd05556c7"/>
+   <file role="doc" name="docs/api.txt" md5sum="f1a061934e409aba836c94dd16af0c6f"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>2.0.0a1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease/>
+</package>
